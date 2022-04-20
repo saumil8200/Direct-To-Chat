@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Direct To Chat</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script>
-    </script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script></script>
+  </head>
+  <body>
     <!--div class="title">
         <h1>
             DIRECT TO CHAT
@@ -21,16 +20,27 @@
         <input type="button" id="myBtn" value="Submit" onClick="javascript: window.open('https://www.google.com/search?q=' + document.getElementById('myInput').value);" />
     </div-->
 
-
-
     <div class="container">
-        <h1>DIRECT TO CHAT</h1>
-        <div class="container__item">
-            <form class="form">
-                <input type="text" id="myInput" class="form__field" placeholder="Enter WhatsApp Number" />
-                <button type="button" id="myBtn" class="btn btn--primary btn--inside uppercase" onClick="javascript: window.open('https://wa.me/91' + document.getElementById('myInput').value);" value="Chat" >Chat</button>
-            </form>
-        </div>
+      <h1>DIRECT TO CHAT</h1>
+      <div class="container__item">
+        <form class="form" onsubmit="handleButtonClick();">
+          <input
+            type="text"
+            id="myInput"
+            class="form__field"
+            placeholder="Enter WhatsApp Number"
+          />
+          <button
+            type="submit"
+            id="myBtn"
+            class="btn btn--primary btn--inside uppercase"
+            value="Chat"
+          >
+            Chat
+          </button>
+        </form>
+      </div>
     </div>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
